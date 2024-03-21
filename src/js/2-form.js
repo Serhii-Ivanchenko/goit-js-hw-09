@@ -11,7 +11,6 @@ form.addEventListener('submit', submitHandle);
 
 const LS_INPUT = 'feedback-form-state';
 
-
 const storedData = JSON.parse(localStorage.getItem(LS_INPUT));
 if (storedData) {
   input.value = storedData.email ?? '';
@@ -28,9 +27,13 @@ function inputHandle(event) {
 
 function submitHandle(event) {
   event.preventDefault();
-  console.log(JSON.parse(localStorage.getItem(LS_INPUT)));
-  localStorage.removeItem(LS_INPUT);
-  form.reset();
+  if (input.value !== '' && textarea.value !== '') {
+    console.log(JSON.parse(localStorage.getItem(LS_INPUT)));
+    localStorage.removeItem(LS_INPUT);
+    form.reset();
+  } else {
+    alert('Fill both fields!');
+  }
 }
 
 // localStorage.clear();
