@@ -1,9 +1,8 @@
-/* @import url(../../node_modules/simplelightbox/dist/simple-lightbox.css); */
-
 .container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 24px;
 }
 
 .gallery {
@@ -38,7 +37,3 @@
     height: 100%;
     transition: transform 300ms ease-in-out;
 }
-
-/* .simple-lightbox {
-    background-color: rgba(46, 47, 66, 0.8);
-} */

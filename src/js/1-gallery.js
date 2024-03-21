@@ -91,5 +91,6 @@ gallery.insertAdjacentHTML('beforeend', createGalleryMarkup(images));
 
 let photosGallery = new SimpleLightbox('.gallery a', {
   captionDelay: 250,
+  overlayOpacity: 0.8,
 });
 photosGallery.on('show.simplelightbox', function () {});
