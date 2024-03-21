@@ -39,17 +39,17 @@
 }
 
 .sl-overlay {
-    background: rgba(46, 47, 66);
+    background: rgba(46, 47, 66) !important;
 }
 
 .sl-wrapper .sl-close {
-    color: #fff;
+    color: #fff !important;
 }
 
 .sl-wrapper .sl-counter {
-    color: #fff;
+    color: #fff !important;
 }
 
 .sl-wrapper .sl-navigation button {
-    color: #fff
+    color: #fff !important;
 }
