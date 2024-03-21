@@ -20,8 +20,8 @@ if (storedData) {
 
 function inputHandle(event) {
   let formData = {
-    email: event.currentTarget.elements.email.value,
-    message: event.currentTarget.elements.message.value,
+    email: event.currentTarget.elements.email.value.trim(),
+    message: event.currentTarget.elements.message.value.trim(),
   };
   localStorage.setItem(LS_INPUT, JSON.stringify(formData));
 }
