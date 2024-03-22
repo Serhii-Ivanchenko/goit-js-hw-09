@@ -80,7 +80,6 @@ function createGalleryMarkup(arr) {
             class="gallery-image"
             src="${preview}"
             alt="${description}"
-            title="${description}"
           />
         </a>
       </li>`
@@ -90,7 +89,7 @@ function createGalleryMarkup(arr) {
 gallery.insertAdjacentHTML('beforeend', createGalleryMarkup(images));
 
 let photosGallery = new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
   captionDelay: 250,
   overlayOpacity: 0.8,
 });
-photosGallery.on('show.simplelightbox', function () {});
